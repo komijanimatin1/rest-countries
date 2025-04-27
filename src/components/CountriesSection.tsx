@@ -1,22 +1,26 @@
+import CountryCart from "./CountryCart";
+
 type Country = {
-  name: {
-    common: string;
-    official: string;
-  };
+  id: string;
+  name: string;
+  nativeName: string;
   population: number;
   region: string;
-  capital?: string[];
-  flags: {
-    png: string;
-    svg: string;
-  };
+  subRegion: string;
+  capital: string;
+  topLevelDomain: string[];
+  currencies: string[];
+  languages: string[];
+  borders: string[];
+  flag: string;
 };
 
 export default function CountriesSection({ countries }: { countries: Country[] }) {
-  console.log(countries)
   return (
-    <section>
-
+    <section className="w-3/4 mx-auto mt-16 flex flex-wrap justify-between">
+      {countries.map(country =>
+        <CountryCart key={country.id} name={country.name} population={country.population} region={country.region} capital={country.capital} flag={country.flag} />)
+      }
     </section>
   );
 }

@@ -3,17 +3,18 @@ import Navbar from "@/components/Navbar";
 import axios from "axios";
 
 type Country = {
-  name: {
-    common: string;
-    official: string;
-  };
+  id: string;
+  name: string;
+  nativeName: string;
   population: number;
   region: string;
-  capital?: string[];
-  flags: {
-    png: string;
-    svg: string;
-  };
+  subRegion: string;
+  capital: string;
+  topLevelDomain: string[];
+  currencies: string[];
+  languages: string[];
+  borders: string[];
+  flag: string;
 };
 
 export default async function Home() {
