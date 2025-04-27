@@ -1,0 +1,321 @@
+{
+  "countries": [
+    {
+      "id": "germany",
+      "name": "Germany",
+      "nativeName": "Deutschland",
+      "population": 81770900,
+      "region": "Europe",
+      "subRegion": "Western Europe",
+      "capital": "Berlin",
+      "topLevelDomain": [
+        ".de"
+      ],
+      "currencies": [
+        "Euro"
+      ],
+      "languages": [
+        "German"
+      ],
+      "borders": [
+        "aut",
+        "bel",
+        "cze",
+        "dnk",
+        "fra",
+        "lux",
+        "nld",
+        "pol",
+        "che"
+      ],
+      "flag": "https://flagcdn.com/de.svg"
+    },
+    {
+      "id": "united-states",
+      "name": "United States of America",
+      "nativeName": "United States",
+      "population": 323947000,
+      "region": "Americas",
+      "subRegion": "Northern America",
+      "capital": "Washington, D.C.",
+      "topLevelDomain": [
+        ".us"
+      ],
+      "currencies": [
+        "United States dollar"
+      ],
+      "languages": [
+        "English"
+      ],
+      "borders": [
+        "can",
+        "mex"
+      ],
+      "flag": "https://flagcdn.com/us.svg"
+    },
+    {
+      "id": "france",
+      "name": "France",
+      "nativeName": "France",
+      "population": 65273511,
+      "region": "Europe",
+      "subRegion": "Western Europe",
+      "capital": "Paris",
+      "topLevelDomain": [
+        ".fr"
+      ],
+      "currencies": [
+        "Euro"
+      ],
+      "languages": [
+        "French"
+      ],
+      "borders": [
+        "bel",
+        "lux",
+        "deu",
+        "che",
+        "ita",
+        "mon",
+        "esp",
+        "and"
+      ],
+      "flag": "https://flagcdn.com/fr.svg"
+    },
+    {
+      "id": "spain",
+      "name": "Spain",
+      "nativeName": "España",
+      "population": 46754778,
+      "region": "Europe",
+      "subRegion": "Southern Europe",
+      "capital": "Madrid",
+      "topLevelDomain": [
+        ".es"
+      ],
+      "currencies": [
+        "Euro"
+      ],
+      "languages": [
+        "Spanish"
+      ],
+      "borders": [
+        "fra",
+        "por",
+        "and"
+      ],
+      "flag": "https://flagcdn.com/es.svg"
+    },
+    {
+      "id": "italy",
+      "name": "Italy",
+      "nativeName": "Italia",
+      "population": 60244639,
+      "region": "Europe",
+      "subRegion": "Southern Europe",
+      "capital": "Rome",
+      "topLevelDomain": [
+        ".it"
+      ],
+      "currencies": [
+        "Euro"
+      ],
+      "languages": [
+        "Italian"
+      ],
+      "borders": [
+        "fra",
+        "svn",
+        "aut",
+        "che"
+      ],
+      "flag": "https://flagcdn.com/it.svg"
+    },
+    {
+      "id": "portugal",
+      "name": "Portugal",
+      "nativeName": "Portugal",
+      "population": 10196709,
+      "region": "Europe",
+      "subRegion": "Southern Europe",
+      "capital": "Lisbon",
+      "topLevelDomain": [
+        ".pt"
+      ],
+      "currencies": [
+        "Euro"
+      ],
+      "languages": [
+        "Portuguese"
+      ],
+      "borders": [
+        "esp"
+      ],
+      "flag": "https://flagcdn.com/pt.svg"
+    },
+    {
+      "id": "netherlands",
+      "name": "Netherlands",
+      "nativeName": "Nederland",
+      "population": 17134872,
+      "region": "Europe",
+      "subRegion": "Western Europe",
+      "capital": "Amsterdam",
+      "topLevelDomain": [
+        ".nl"
+      ],
+      "currencies": [
+        "Euro"
+      ],
+      "languages": [
+        "Dutch"
+      ],
+      "borders": [
+        "bel",
+        "deu"
+      ],
+      "flag": "https://flagcdn.com/nl.svg"
+    },
+    {
+      "id": "belgium",
+      "name": "Belgium",
+      "nativeName": "België",
+      "population": 11589623,
+      "region": "Europe",
+      "subRegion": "Western Europe",
+      "capital": "Brussels",
+      "topLevelDomain": [
+        ".be"
+      ],
+      "currencies": [
+        "Euro"
+      ],
+      "languages": [
+        "Dutch",
+        "French",
+        "German"
+      ],
+      "borders": [
+        "fra",
+        "deu",
+        "nld"
+      ],
+      "flag": "https://flagcdn.com/be.svg"
+    },
+    {
+      "id": "sweden",
+      "name": "Sweden",
+      "nativeName": "Sverige",
+      "population": 10379295,
+      "region": "Europe",
+      "subRegion": "Northern Europe",
+      "capital": "Stockholm",
+      "topLevelDomain": [
+        ".se"
+      ],
+      "currencies": [
+        "Swedish krona"
+      ],
+      "languages": [
+        "Swedish"
+      ],
+      "borders": [
+        "nor",
+        "fin"
+      ],
+      "flag": "https://flagcdn.com/se.svg"
+    },
+    {
+      "id": "norway",
+      "name": "Norway",
+      "nativeName": "Norge",
+      "population": 5421241,
+      "region": "Europe",
+      "subRegion": "Northern Europe",
+      "capital": "Oslo",
+      "topLevelDomain": [
+        ".no"
+      ],
+      "currencies": [
+        "Norwegian krone"
+      ],
+      "languages": [
+        "Norwegian"
+      ],
+      "borders": [
+        "swe",
+        "fin"
+      ],
+      "flag": "https://flagcdn.com/no.svg"
+    },
+    {
+      "id": "denmark",
+      "name": "Denmark",
+      "nativeName": "Danmark",
+      "population": 5818553,
+      "region": "Europe",
+      "subRegion": "Northern Europe",
+      "capital": "Copenhagen",
+      "topLevelDomain": [
+        ".dk"
+      ],
+      "currencies": [
+        "Danish krone"
+      ],
+      "languages": [
+        "Danish"
+      ],
+      "borders": [
+        "nor",
+        "swe"
+      ],
+      "flag": "https://flagcdn.com/dk.svg"
+    },
+    {
+      "id": "finland",
+      "name": "Finland",
+      "nativeName": "Suomi",
+      "population": 5540720,
+      "region": "Europe",
+      "subRegion": "Northern Europe",
+      "capital": "Helsinki",
+      "topLevelDomain": [
+        ".fi"
+      ],
+      "currencies": [
+        "Euro"
+      ],
+      "languages": [
+        "Finnish",
+        "Swedish"
+      ],
+      "borders": [
+        "nor",
+        "swe",
+        "est",
+        "rus"
+      ],
+      "flag": "https://flagcdn.com/fi.svg"
+    },
+    {
+      "id": "iceland",
+      "name": "Iceland",
+      "nativeName": "Ísland",
+      "population": 366419,
+      "region": "Europe",
+      "subRegion": "Northern Europe",
+      "capital": "Reykjavik",
+      "topLevelDomain": [
+        ".is"
+      ],
+      "currencies": [
+        "Icelandic króna"
+      ],
+      "languages": [
+        "Icelandic"
+      ],
+      "borders": [],
+      "flag": "https://flagcdn.com/is.svg"
+    }
+  ]
+}
