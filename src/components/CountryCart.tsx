@@ -10,7 +10,7 @@ export default function CountryCart({ id, name, population, region, capital, fla
             />
             <div className="p-4">
                 <Link
-                    href={`/country/${id}`}
+                    href={`/countries/${id}`}
                     className="text-lg font-bold mb-2"
                 >
                     {name}
