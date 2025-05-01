@@ -1,4 +1,3 @@
-import axios from "axios";
 export const revalidate = 7200;
 
 export async function generateStaticParams() {
@@ -19,13 +18,15 @@ export default async function page({ params }: { params: { id: string } }) {
 
     return (
         <div>
-            <main className="flex justify-start">
+            <main className="bg-white p-12 rounded-4xl w-4/5 mx-auto flex justify-around mt-12">
                 {/* country flag section */}
-                <section className="w-max">
-                    
+                <section className="w-2/5">
+                    <img
+                        src={country.flag}
+                    />
                 </section>
                 {/* country details section */}
-                <section>
+                <section className="w-2/5">
                     <h1 className="text-3xl font-bold mb-4">{country.name}</h1>
                     <ul className="list-none space-y-2">
                         <li>
@@ -52,12 +53,23 @@ export default async function page({ params }: { params: { id: string } }) {
                         <li>
                             <strong>Languages:</strong> {country.languages.join(", ")}
                         </li>
-                        <li>
-                            <strong>Border Countries:</strong>{" "}
-                            {country.borders.length > 0
-                                ? country.borders.join(", ")
-                                : "None"}
+                        <li className="">
+                            <strong>Border Countries:</strong>
+                            <ul className="flex flex-wrap">
+                                {Array.isArray(country.borders) && country.borders.length > 0 ? (
+                                    country.borders.map((border: string) => (
+                                        <li key={border} className=" m-2 px-4 py-1 bg-gray-100 rounded">
+                                            {border}
+                                        </li>
+                                    ))
+                                ) : (
+                                    <li className="inline-block m-2 px-4 py-1 bg-gray-100 rounded">
+                                        No bordering countries
+                                    </li>
+                                )}
+                            </ul>
                         </li>
+
                     </ul>
                 </section>
             </main>
