@@ -8,7 +8,7 @@ export default function Navbar() {
             </span>
 
             {/* darck mode section */}
-            <span className='w-25 h-full p-2 flex items-center gap-2'>
+            <span className='w-25 h-full p-2 flex items-center gap-2 cursor-pointer'>
                 <FontAwesomeIcon icon={faMoon}/>
                 <span>Dark Mode</span>
             </span>
