@@ -20,7 +20,7 @@ export default async function page({ params }: { params: { id: string } }) {
         <div>
             <main className="bg-white p-12 rounded-4xl w-4/5 mx-auto flex justify-around mt-12">
                 {/* country flag section */}
-                <section className="w-2/5">
+                <section className="w-2/5 h-max shadow-xl">
                     <img
                         src={country.flag}
                     />
