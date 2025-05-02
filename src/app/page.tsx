@@ -1,6 +1,7 @@
 import CountriesSection from "@/components/CountriesSection";
 import Navbar from "@/components/Navbar";
 import axios from "axios";
+import SearchComponent from '../components/Searchbar'
 
 type Country = {
   id: string;
@@ -26,7 +27,9 @@ export default async function Home() {
   return (
     <div>
         <Navbar/>
+        <SearchComponent/>
         <CountriesSection countries={countries}/>
+        
     </div>
   );
 }
