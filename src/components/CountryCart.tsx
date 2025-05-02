@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export default function CountryCart({ id, name, population, region, capital, flag }: { id: string; name: string; population: number; region: string; capital: string; flag: string; }) {
     return (
-        <div className="bg-white rounded-lg shadow-md overflow-hidden w-80 my-4">
+        <div className="bg-white rounded-lg shadow-md overflow-hidden w-80 my-4 hover:scale-105 active:scale-95 transition-all duration-200">
             <img
                 src={flag}
                 alt={`${name} flag`}
-                className="w-full h-40 object-cover"
+                className="w-full h-40 object-cover س"
             />
             <div className="p-4">
                 <Link
