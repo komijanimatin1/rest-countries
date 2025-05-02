@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function CountryCart({ id, name, population, region, capital, flag }: { id: string; name: string; population: number; region: string; capital: string; flag: string; }) {
     return (
-        <div className="bg-white rounded-lg shadow-md overflow-hidden w-80 my-4">
+        <div className="bg-white rounded-lg shadow-md overflow-hidden w-80 my-2">
             <img
                 src={flag}
                 alt={`${name} flag`}
