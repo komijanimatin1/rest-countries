@@ -1,29 +1,11 @@
 import CountriesSection from "@/components/CountriesSection";
 import Navbar from "@/components/Navbar";
 import axios from "axios";
-import SearchComponent from '../components/Searchbar'
-
-type Country = {
-  id: string;
-  name: string;
-  nativeName: string;
-  population: number;
-  region: string;
-  subRegion: string;
-  capital: string;
-  topLevelDomain: string[];
-  currencies: string[];
-  languages: string[];
-  borders: string[];
-  flag: string;
-};
+import { getCountries } from "./libraries/getCountries";
 
 export default async function Home() {
-  const { data: countries } = await axios.get<Country[]>('http://localhost:3000/countries', {
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  });
+
+  const countries = await getCountries();
   return (
     <div>
         <Navbar/>
