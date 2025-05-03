@@ -1,5 +1,7 @@
 export const revalidate = 7200;
 
+// this page is SSG
+// this function generates static params
 export async function generateStaticParams() {
     const res = await fetch('http://localhost:3000/countries', {
         method: 'GET',

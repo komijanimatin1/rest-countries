@@ -2,9 +2,11 @@ import CountriesSection from "@/components/CountriesSection";
 import { getCountries } from "../libraries/getCountries";
 
 export default async function SearchPage({ searchParams }: { searchParams: { query?: string } }) {
+  // get search query from URL params and convert to lowercase, default to empty string if no query
   const query = searchParams.query?.toLowerCase() || '';
   const countries = await getCountries();
 
+  // filter countries by query
   const filtered = countries.filter((country) => {
     const queryLower = query.toLowerCase();
 
@@ -30,6 +32,7 @@ export default async function SearchPage({ searchParams }: { searchParams: { que
           ? `Results for "${query}"`
           : `No results found for "${query}"`}
       </h1>
+      {/* send filtered countries for make a new countries list */}
       <CountriesSection countries={filtered} />
     </main>
   );

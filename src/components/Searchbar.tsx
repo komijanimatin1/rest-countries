@@ -8,6 +8,7 @@ export default function SearchComponent() {
   const [query, setQuery] = useState('');
   const router = useRouter();
 
+  // this function pushes client search input as query
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (query.trim()) {
