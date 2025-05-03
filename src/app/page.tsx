@@ -10,8 +10,10 @@ export default async function Home() {
   return (
     <div>
       <Navbar />
-      <SearchComponent />
-      <RegionFilter />
+      <div className="w-full mt-8 flex justify-center gap-8">
+        <SearchComponent />
+        <RegionFilter />
+      </div>
       <CountriesSection countries={countries} />
     </div>
   );

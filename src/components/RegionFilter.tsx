@@ -20,7 +20,7 @@ export default function RegionFilter() {
     <div className="w-48 mb-6">
       <select
         onChange={handleChange}
-        className="w-full border rounded-md p-2"
+        className="w-full outline-none rounded-md p-2 bg-white"
         defaultValue=""
       >
         <option value="" disabled hidden>
