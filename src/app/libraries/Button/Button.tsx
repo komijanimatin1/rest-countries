@@ -5,7 +5,7 @@ type ButtonSize = 'small' | 'medium' | 'large';
 type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'ghost';
 
 // interface for props
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     size?: ButtonSize;
     variant?: ButtonVariant;
     isFullWidth?: boolean;
@@ -14,11 +14,11 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button: React.FC<ButtonProps> = ({
     children,
+    disabled,
     size = 'medium',
     variant = 'primary',
     isFullWidth = false,
     className = '',
-    disabled,
     // client plugins
     ...props
 }) => {
@@ -46,8 +46,7 @@ const Button: React.FC<ButtonProps> = ({
         sizeStyles[size],
         variantStyles[variant],
         isFullWidth ? 'w-full' : '',
-        disabled,
-        'cursor-pointer',
+        disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer',
         className,
     ].join(' ');
 
