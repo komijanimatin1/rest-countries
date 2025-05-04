@@ -18,7 +18,7 @@ export default async function Home() {
       <Navbar /> 
 
       {/* search and filter section */}
-      <div className="w-full mt-8 flex justify-center gap-8">
+      <div className="w-full mt-8 flex flex-col items-center sm:flex-row sm:items-start justify-center gap-8">
         <SearchComponent />
         <RegionFilter />
       </div>

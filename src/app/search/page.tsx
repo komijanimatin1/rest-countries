@@ -33,7 +33,7 @@ export default async function SearchPage({ searchParams }: { searchParams: { que
         <Link href="/">
           <Button variant="outline" className="hover:scale-110 active:scale-95">← Back</Button>
         </Link>
-        <h1 className="text-center text-2xl font-bold">
+        <h1 className="text-center text-xl sm:text-3xl font-bold">
           {filtered.length > 0
             ? `Results for "${query}"`
             : `No results found for "${query}"`}
