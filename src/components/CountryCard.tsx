@@ -6,7 +6,7 @@ export default function CountryCart({ id, name, population, region, capital, fla
             href={`/countries/${id}`}
             className="text-lg font-bold mb-2"
         >
-            <div className="bg-white rounded-lg shadow-md overflow-hidden w-80 my-4 hover:scale-105 active:scale-95 transition-all duration-200">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden w-70 lg:w-80 my-4 hover:scale-105 active:scale-95 transition-all duration-200">
                 {/* country flag */}
                 <img
                     src={flag}
