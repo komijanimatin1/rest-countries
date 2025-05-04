@@ -23,18 +23,19 @@ export default async function page({ params }: { params: { id: string } }) {
 
     return (
         <div>
-            <main className="bg-white p-12 rounded-4xl w-4/5 mx-auto flex justify-around mt-12">
+            <main className="bg-white p-6 sm:p-12 rounded-4xl w-4/5 mx-auto  mt-12">
             <Link href="/">
                 <Button variant="outline" className="hover:scale-110 active:scale-95">← Back</Button>
             </Link>
+            <div className="flex flex-col sm:flex-row justify-around gap-2 mt-4">
                 {/* country flag section */}
-                <section className="w-2/5 h-max shadow-xl">
+                <section className="w-full sm:w-2/5 h-max shadow-xl">
                     <img
                         src={country.flag}
                     />
                 </section>
                 {/* country details section */}
-                <section className="w-2/5">
+                <section className="w-full sm:w-2/5">
                     <h1 className="text-3xl font-bold mb-4">{country.name}</h1>
                     <ul className="list-none space-y-2">
                         <li>
@@ -80,6 +81,7 @@ export default async function page({ params }: { params: { id: string } }) {
 
                     </ul>
                 </section>
+            </div>
             </main>
         </div>
     )
