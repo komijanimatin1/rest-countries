@@ -1,3 +1,6 @@
+import Link from "next/link";
+import Button from '../../libraries/Button/Button'
+
 export const revalidate = 7200;
 
 // this page is SSG
@@ -21,6 +24,9 @@ export default async function page({ params }: { params: { id: string } }) {
     return (
         <div>
             <main className="bg-white p-12 rounded-4xl w-4/5 mx-auto flex justify-around mt-12">
+            <Link href="/">
+                <Button variant="outline" className="hover:scale-110 active:scale-95">← Back</Button>
+            </Link>
                 {/* country flag section */}
                 <section className="w-2/5 h-max shadow-xl">
                     <img

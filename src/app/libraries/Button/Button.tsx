@@ -23,7 +23,7 @@ const Button: React.FC<ButtonProps> = ({
     ...props
 }) => {
     // defult styles
-    const baseStyles = 'rounded-md font-medium transition-colors duration-200';
+    const baseStyles = 'rounded-md font-medium transition-all duration-200';
     
     // size of button
     const sizeStyles = {
