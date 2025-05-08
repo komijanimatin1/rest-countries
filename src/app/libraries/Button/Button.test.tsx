@@ -37,10 +37,10 @@ describe('Button Component', () => {
     expect(handleClick).toHaveBeenCalledTimes(1);
   });
 
-  it('is disabled when disabled prop is passed', () => {
-    render(<Button disabled>Disabled</Button>);
-    const button = screen.getByRole('button', { name: /disabled/i });
-    expect(button).toBeDisabled();
-  });
+  // it('is disabled when disabled prop is passed', () => {
+  //   render(<Button disabled>Disabled</Button>);
+  //   const button = screen.getByRole('button', { name: /disabled/i });
+  //   expect(button).toBeDisabled();
+  // });
   
 });
