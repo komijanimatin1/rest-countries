@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation';
 
 // all regions
-const regions = ['All', 'Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
+export const regions = ['All', 'Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
 
 export default function RegionFilter() {
   const router = useRouter();
